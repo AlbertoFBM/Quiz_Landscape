@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Quiz_Landscape</string>
+    <string name="true_button">TRUE</string>
+    <string name="false_button">FALSE</string>
+    <string name="questions">London is the capital of France.</string>
+    <string name="next_button">NEXT</string>
+</resources>
