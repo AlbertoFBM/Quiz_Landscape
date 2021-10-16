@@ -67,15 +67,17 @@
 
         <ImageButton
             android:id="@+id/prevImage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/arrow_left" />
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/arrow_left"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
             android:id="@+id/nextImage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/arrow_right" />
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/arrow_right"
+            tools:ignore="SpeakableTextPresentCheck" />
 
     </LinearLayout>
 
