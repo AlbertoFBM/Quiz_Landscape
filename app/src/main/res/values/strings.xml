@@ -1,7 +1,19 @@
 <resources>
-    <string name="app_name">Quiz_Landscape</string>
-    <string name="true_button">TRUE</string>
-    <string name="false_button">FALSE</string>
-    <string name="questions">London is the capital of France.</string>
-    <string name="next_button">NEXT</string>
+    <string name="app_name"> Quiz_Landscape </string>
+    <string name="true_button"> TRUE </string>
+    <string name="false_button"> FALSE </string>
+    <string name="next_button"> NEXT </string>
+    <string name="previous_button"> PREV </string>
+    <string name="correct_toast"> Correct!</string>
+    <string name="incorrect_toast"> Incorrect! </string>
+    <string name="question_London"> London is the capital of France. </string>
+    <string name="question_Berlin"> Berlin is the capital of Germany. </string>
+    <string name="question_Athens"> Athens is the capital of Switzerland. </string>
+    <string name="question_Bucharest"> Bucharest is the capital of Romania. </string>
+    <string name="question_Copenhagen"> Copenhagen is the capital of Denmark. </string>
+    <string name="question_Oslo"> Oslo is the capital of Sweden. </string>
+    <string name="question_Stockholm"> Stockholm is the capital of Bulgaria. </string>
+    <string name="question_Monaco"> Monaco is the capital of Montenegro. </string>
+    <string name="question_Dublin"> Dublin is the capital of Ireland. </string>
+    <string name="question_Madrid"> Madrid is the capital of United Kingdom. </string>
 </resources>
