@@ -3,6 +3,7 @@ package com.aserranor.quiz_landscape;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -20,6 +21,11 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton nextI;
     private ImageButton prevI;
 
+    private int currentIndex = 0;
+
+    private static final String TAG = "Quiz_Landscape";
+    private static final String KEY_INDEX = "index";
+
     private Questions[] questionsBank = new Questions[] {
 
             new Questions(R.string.question_London, false),
@@ -34,12 +40,14 @@ public class MainActivity extends AppCompatActivity {
             new Questions(R.string.question_Madrid, false)
     };
 
-    private int currentIndex = 0;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        if(savedInstanceState != null){
+            currentIndex = savedInstanceState.getInt(KEY_INDEX, 0);
+        }
 
         // Find ID
         trueButton = (Button) findViewById(R.id.buttonTrue);
@@ -112,8 +120,17 @@ public class MainActivity extends AppCompatActivity {
                 updateQuestion();
             }
         });
+
+
     }
 
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+        Log.i(TAG, "onSaveInstanceState");
+        savedInstanceState.putInt(KEY_INDEX, currentIndex);
+    }
 
     private void updateQuestion(){
 
